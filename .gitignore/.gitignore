@@ -1,0 +1,174 @@
+print("Welcome to Mastermind!")
+print("Developed by YOUR NAME SHOULD APPEAR HERE")
+print("*Press 1, 2 or 3 to continue*")
+choice=float(input("Select which game you want to play: 1.Original Mastermind for 2 players 2.Original Mastermind for 1 Player. 3. Mastermind44 for 4 Players"))
+try:
+    if choice==1:
+        print(input("Player 1: What is your name?"))
+        print(input("Player 2: What is your name?"))
+        print("Welcome!You need to create a code that consists of four pegs.Eeach peg can be of the colour (R)ed, B(L)ue, (G)reen, (Y)ellow, (W)hite, or (B)lack. Specify the code by specifying four characters where each character indicates a colour as above. For example, WWRG represents the code White-White-Red-Green. You need to enter the code twice. No character is shown on the screen so Supermind cannot see itEnter the code now:")
+        print(input("Enter the same code again:"))
+    elif choice==2:
+        print(input("Player 1: What is your name?"))
+        print("Welcome！You need to create a code that consists of four pegs.Eeach peg can be of the colour (R)ed, B(L)ue, (G)reen, (Y)ellow, (W)hite, or (B)lack. Specify the code by specifying four characters where each character indicates a colour as above. For example, WWRG represents the code White-White-Red-Green. You need to enter the code twice. No character is shown on the screen so Supermind cannot see it. Enter the code now:")
+        print(input("Enter the same code again:"))
+    else:
+        print(input("Player 1: What is your name?"))
+        print(input("Player 2: What is your name?"))
+        print(input("Player 3: What is your name?"))
+        print(input("Player 4: What is your name?"))
+        print("Welcome！You need to create a code that consists of four pegs.Eeach peg can be of the colour (R)ed, B(L)ue, (G)reen, (Y)ellow, (W)hite, or (B)lack. Specify the code by specifying four characters where each character indicates a colour as above. For example, WWRG represents the code White-White-Red-Green. You need to enter the code twice. No character is shown on the screen so Supermind cannot see it. Enter the code now:")
+        print(input("Enter the same code again:"))
+except ValueError:
+    print('*Press 1, 2 or 3 to continue*')
+   
+class GameControl:
+    def __init__(self, gameOption):
+        self.gameOption=gameOption
+    def play(self):
+        print("start the game.")
+    def getGameoption(self):
+        print("Choose your option")
+    def setGameOption(self):
+        print("self.gameOption")
+         
+
+class Game(GameControl):
+    def __init__(self,guessLimit,playerLimit,numGames,cpusupport,curretnGuess):
+        self.guessLimit=guessLimit
+        self.playerLimit=playerLimit
+        self.numGames=numGames
+        self.cpusupport=cpusupport
+        self.curretnGuess=curretnGuess
+        self.guessLimit=int(input("Please make guesses:"))
+        self.playerLimit=int(input("How many players will play the game:"))
+    def playGame(self):
+        print("start the game")
+    def getCurrentGuess(self):
+        print("The current guess is"+self.currentGuess)
+    def getNumGuesses(self):
+        print(self.guess)
+    def getGameCode(self):
+        self.getGameCode=getGameCode
+    def setgameCode(self):
+        self.setgameCode=setgameCode
+    def getCpu(self):
+        self.getCpu=getCpu
+    def setCpu(self):
+        self.setCpu=setCpu
+    def getGuessLimit(self):
+        getguessLimit=self.guessLimit=int(input("Please make guesses:"))
+    def getGuessList(self):
+        getGuessList=self.guessLimit=list(int(input("Please make guesses:")))
+                                        
+        
+        
+
+class Mastermind(Game):
+    def __init__(self,guessLimit,playerLimit,numGames,cpusupport,curretnGuess):
+        super().__init__(guessLimit,playerLimit,numGames,cpusupport,curretnGuess)
+        self.guessLimit=int(input("Please make guesses:"))
+        self.playerLimit=int(input("How many players will play the game:"))
+        if playerLimit > 2:
+            print("Invaild player number")
+        else:
+            print("Start the game")
+    def computerSupport(self):
+        if Mastermind in computersupport:
+            player==codebreaker
+
+        else:
+            player==codemaker and codebreaker
+            
+
+class Mastermind44(Game):
+     def __init__(self,guessLimit,playerLimit,numGames,cpusupport,curretnGuess):
+         super().__init__(sguessLimit,playerLimit,numGames,cpusupport,curretnGuess)
+         self.guessLimit=int(input("Please make guesses:"))
+         self.playerLimit=int(input("How many players will play the game:"))
+         if playerLimit > 4:
+            print("Invaild player number")
+         else:
+            print("Start the game")
+     def blackCodeCounter(self):
+         import random
+         print( random.randint(1,5))
+
+
+class code(Game):
+    def __init__(self,code,codeLength):
+        self.code=code
+        self.codeLength=codelength
+        self.codeLength=int(len(string))
+    def getCode(self):
+        self.getCode=getCode
+    def checkBlank(self):
+        if Mastermind==0:
+            print("No Error")
+        else:
+            print("It can't have blank in Mastermind")
+        if mastermind44==0 and 1:
+            print("No Error")
+        else:
+            print("It can have only one blank in Mastermind44")
+        
+    def getlength(self):
+        print(len(self.getlength))
+    def setLength(self):
+        self.setLength=setLength
+
+
+class pegs(code):
+    def __init__(self,colour):
+        self.colour=colour
+        colour=Red, Green, Blue, Yellow, White, Black
+    def code(self):
+        Mastermind==4
+        Mastermind44==5
+        
+
+class CodeCounter(Mastermind44):
+    def __init__(self,type,colour,value):
+        self.type=type
+        self.colour=colour
+        self.value=value
+        self.colour=Red, Green, Blue, Yellow, White, Black
+        self.value=int(1,2,3,4,5)
+
+class players(Mastermind, Mastermind44):
+    def __init__(self,name,score):
+        self.name=name 
+        self.score=score
+    def setCode(self):
+        self.setCode=setCode
+    def setName(self):
+        print(self.name)
+    def setScore(self):
+        print(score)
+    def getScore(self):
+        return self.score
+    def takeTurn(self):
+        pass
+        
+
+class CodeMaker(Game):
+    def __init__(self,secretList,seCode):
+        self.secretList=secretList
+        self.setCode=setCode
+    def codeMaker(self):
+        self.codeMaker=codeMaker
+    def evaluateGuess(self):
+        self.evaluateGuess=evaluateGuess
+
+
+class CodeBreaker(Game):
+    def __init__(self,guessList):
+        self.guessList=guessList
+    def codebreak(self):
+        for players in Mastermind:
+            attempts==12
+        for players in Mastermind44:
+            attempts==5
+    def makeGuess(self):
+        print(self.makeGuess)
+
